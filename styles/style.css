@@ -9,7 +9,7 @@ body{
     height: 60px;
     position: fixed;
     top: -2px;
-    background-image: linear-gradient(120deg, purple 30%, grey 75%, red 80%);
+    background-image: linear-gradient(120deg, #2d2d2d 30%, blue 50%, red 70%);
 }
 .navbar h1{
     font-size: 25px;
@@ -58,8 +58,7 @@ a.active, a:hover{
 .sidebar ul{
     width: 200px;
     height: 530px;
-    background-color: none;
-    background-image: linear-gradient(50deg, pink 20%, rgb(43, 226, 125) 50%, pink 70%);
+    background-color: wheat;
     position: fixed;
     left: 0PX;
     top: 80px;
@@ -291,6 +290,9 @@ button {
 .nav-togglerb span::after{
     transform: translateY(6px);   
 }
+.nav-toggler{
+    right: 20PX;
+}
 
 
 
@@ -460,7 +462,7 @@ button {
         left: -30px;
     }
     .sidebar ul{
-        width: 120px;
+        width: 300px;
         height: 555px;
         background-color: wheat;
         position: fixed;
@@ -486,8 +488,8 @@ button {
       justify-content: center;
       position: relative;
       left: -25px;
-
-      width: 120px;
+letter-spacing: 0.2EM;
+      width: 250px;
   
       background-color: none;
     }
@@ -499,6 +501,9 @@ button {
         font-size: 12px;
         width: 120px;
         
+    }
+    .nav-toggler{
+        right: 20PX;
     }
 }
 
@@ -526,7 +531,7 @@ button {
     }
     .nav-togglerb,
     .nav-togglerb span{
-        visibility: hidden;
+        visibility: visible;
     }
     .scrollable{
       left: -10px;
@@ -546,6 +551,18 @@ button {
     .sidebar{
         border-radius: 5px;
     }
+    .sidebar ul{
+        width: 300px;
+        top: 85px;
+
+    }
+    .sidebar a{
+        letter-spacing: 0.2em;
+        width: 300px;
+    }
+    .nav-toggler{
+        right: 20px;
+    }
 
 }
 
@@ -561,7 +578,7 @@ button {
         width: 720px;
     }
     .navbar{
-        width: auto;
+        width: 720px;
         height: 55px;
     }
     .nav-toggler{
@@ -705,7 +722,7 @@ button {
         left: -30px;
     }
     .sidebar ul{
-        width: 120px;
+        width: 250px;
         height: 555px;
         background-color: wheat;
         position: fixed;
@@ -730,8 +747,8 @@ button {
       justify-content: center;
       position: relative;
       left: -25px;
-
-      width: 120px;
+        letter-spacing: 0.2em;
+      width: 250px;
   
       background-color: none;
     }
@@ -747,6 +764,9 @@ button {
     .nav-togglerb,
     .nav-togglerb span{
         visibility: visible;
+    }
+    .nav-toggler{
+        right: 20px;
     }
 }
 
@@ -765,7 +785,7 @@ button {
         width: 480px;
     }
     .navbar{
-        width: auto;
+        width: 480px;
         height: 55px;
     }
     .nav-toggler{
@@ -910,7 +930,7 @@ button {
     }
 
     .sidebar ul{
-        width: 120px;
+        width: 350px;
         height: 455px;
         background-color: wheat;
         position: fixed;
@@ -935,8 +955,8 @@ button {
       justify-content: center;
       position: relative;
       left: -25px;
-
-      width: 120px;
+        letter-spacing: 0.2em;
+      width: 350px;
   
       background-color: none;
     }
@@ -948,6 +968,9 @@ button {
         font-size: 12px;
         width: 120px;
         
+    }
+    .nav-toggler{
+        right: 20px;
     }
 }
 
@@ -964,7 +987,7 @@ button {
         width: 360px;
     }
     .navbar{
-        width: auto;
+        width: 360px;
         height: 55px;
     }
     .nav-toggler{
@@ -983,7 +1006,7 @@ button {
         
     }
     .sidebar ul{
-        width: 120px;
+        width: 350px;
         height: 455px;
         background-color: wheat;
         position: fixed;
@@ -1004,12 +1027,12 @@ button {
         text-decoration: none;
         display: block;
       line-height: 28px;
-      text-align: left;
+      text-align: center;
       justify-content: center;
       position: relative;
-      left: -25px;
-
-      width: 120px;
+      left: -70px;
+    background-color: none;
+      width: 250px;
   
       background-color: none;
     }
@@ -1105,13 +1128,13 @@ button {
     }
     .pic{
         width: 120px;
-        height: 80px;
+        height: 100px;
         border-radius: 20px;
         user-select: none;
     }
     .scrollable ul h2{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 17px;
+        font-size: 13px;
         width: 120px;
         height: 40px;
         user-select: none;
@@ -1146,6 +1169,7 @@ button {
         cursor: pointer;
         display: inline-block;
         position: relative;
+        top: -20px;
         user-select: none;
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
     }
@@ -1158,6 +1182,15 @@ button {
         position: relative;
         left: -30px;
         user-select: none;
+    }
+    .sidebar{
+        width: auto;
+    }
+    .sidebar a{
+        letter-spacing: 0.2em;
+    }
+    .nav-toggler{
+        right: 20px;
     }
 }
 
@@ -1351,6 +1384,7 @@ button {
     .sidebar a{
         font-size: 8px;
         line-height: 20px;
+        letter-spacing: 0.2em;
     }
     .scrollable{
         display: block;
