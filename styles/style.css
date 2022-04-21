@@ -561,7 +561,7 @@ button {
         width: 720px;
     }
     .navbar{
-        width: 720px;
+        width: auto;
         height: 55px;
     }
     .nav-toggler{
@@ -765,7 +765,7 @@ button {
         width: 480px;
     }
     .navbar{
-        width: 480px;
+        width: auto;
         height: 55px;
     }
     .nav-toggler{
@@ -964,7 +964,7 @@ button {
         width: 360px;
     }
     .navbar{
-        width: 360px;
+        width: auto;
         height: 55px;
     }
     .nav-toggler{
@@ -1174,7 +1174,7 @@ button {
         width: 240px;
     }
     .navbar{
-        width: 240px;
+        width: auto;
         height: 30px;
     }
     .nav-toggler{
