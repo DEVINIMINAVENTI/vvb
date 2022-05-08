@@ -62,6 +62,7 @@ a.active, a:hover{
     position: fixed;
     left: 0PX;
     top: 80px;
+    visibility: hidden;
 }
 .sidebar ul li{
     list-style-type: none;
@@ -87,12 +88,13 @@ a.active, a:hover{
     
 }
 .leftside{
-    width: 1110px;
+     
     height: fit-content;
     background-color: whitesmoke;
     position: absolute;
-    right: 0px;
-    top: 60px;
+    width: 100%;
+    margin: auto;
+    top: 50px;
 }
 .header{
     width: 1090px;
@@ -108,6 +110,7 @@ a.active, a:hover{
     text-align: center;
     justify-content: center;
     font-size: 35px;
+    visibility: visible;
     color: blue;
     user-select: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -214,7 +217,7 @@ button {
     cursor: pointer;
     position: fixed;
     top: -1px;
-    left: 400px;
+    right: 5px;
     border: none;
     display: none;
 }
@@ -335,7 +338,7 @@ button {
     .nav-toggler{
         display: block;
         position: fixed;
-        left: 1070px;
+        right: 5px;
         top: -px;
         visibility: visible;
     }
@@ -361,14 +364,14 @@ button {
         visibility: hidden;
     }
     .sidebarb{
-       visibility: visible;
+       visibility: hidden;
     }
     .navbarbaa{
         visibility: hidden;
     }
     .leftside{
         background-color: none;
-        width: 480px;
+        width: 100%;
     }
     /*stop control y*/
     .scrollable{
@@ -376,36 +379,36 @@ button {
         background-color: none;
     }
     .header{
-        width: 680px;
+        width: 100%;
         padding-top: 20px;
         height: 80px;
         position: relative;
-        left: -600px;
+        
     }
     .header h1{
         text-align: center;
         justify-content: center;
-        font-size: 15px;
+        font-size: 20px;
         color: blue;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .header p{
         text-align: center;
         justify-content: center;
-        font-size: 15px;
+        font-size: 18px;
         color: #2d2d2d;
         font-family: serif;
     }
     
     .scrollable{
-        width: 680px;
+        width: 100%;
         height: 350px;
         background-color: none;
         position: relative;
-        right: 0px;
+        
         background-color: none;
         top: 70px;
-        left: -500px;
+        margin: auto;
         display: flex;
     }
     .pic{
@@ -428,7 +431,7 @@ button {
         border-radius: 20px;
         padding-left: none;
         position: relative;
-        left: -30px;
+        
     }
     button {
         width: 90px;
@@ -513,16 +516,16 @@ letter-spacing: 0.2EM;
 
 @media screen and (max-width: 1024px) {
     *{
-        width: 1024px;
+        width: 100%;
     }
     body{
-        width: 1024px;
+        width: 100%;
     }
     .navbar{
-        width: 1024px;
+        width: 100%;
     }
     .nav-toggler{
-        left: 950px;
+        right: 5px;
     }
     .leftside{
         width: 1024px;
@@ -531,7 +534,7 @@ letter-spacing: 0.2EM;
     }
     .nav-togglerb,
     .nav-togglerb span{
-        visibility: visible;
+        visibility: hidden;
     }
     .scrollable{
       left: -10px;
@@ -546,7 +549,7 @@ letter-spacing: 0.2EM;
         font-size: 25px;
     }
     .header{
-        left: -97px;
+        
     }
     .sidebar{
         border-radius: 5px;
@@ -572,19 +575,19 @@ letter-spacing: 0.2EM;
 
 @media screen and (max-width: 720px) {
     *{
-        width: 720px;
+        width: 100%;
     }
     body{
-        width: 720px;
+        width: 100%;
     }
     .navbar{
-        width: 720px;
+        width: 100%;
         height: 55px;
     }
     .nav-toggler{
         display: block;
         position: fixed;
-        left: 670px;
+        right: 5px;
         top: -px;
         visibility: visible;
     }
@@ -628,19 +631,26 @@ letter-spacing: 0.2EM;
     }
     .leftside{
         background-color: none;
-        width: 480px;
+        width: 100%;
+        height: fit-content;
+        top: 150px
+        ;
     }
     /*stop control y*/
     .scrollable{
-        width: 480px;
+        width: 100%;
         background-color: none;
+        height: fit-content;
+        top: 50px;
     }
     .header{
-        width: 680px;
-        padding-top: 20px;
+        width: 100%;
+        top: -100px;
         height: 80px;
         position: relative;
-        left: -100px;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
     }
     .header h1{
         text-align: center;
@@ -658,19 +668,19 @@ letter-spacing: 0.2EM;
     }
     
     .scrollable{
-        width: 680px;
-        height: 350px;
+        width: 100%;
+        height: 300px;
         background-color: none;
         position: relative;
         right: 0px;
         background-color: none;
-        top: 70px;
-        left: -200px;
+        top: 0px;
+        
         display: flex;
     }
     .pic{
         width: 180px;
-        height: 200px;
+        height: 150px;
         border-radius: 20px;
         user-select: none;
     }
@@ -684,11 +694,26 @@ letter-spacing: 0.2EM;
     .scrollable ul li{
         background-color: wheat;
         width: 180px;
-        height: 300px;
+        height: 250px;
         border-radius: 20px;
         padding-left: none;
         position: relative;
-        left: -30px;
+        
+    }
+    .scrollable ul li:hover{
+        background-color: wheat;
+        width: 180px;
+        height: 250px;
+        border-radius: 20px;
+        padding-left: none;
+        position: relative;
+        left: 5px;
+        
+    }
+    .scrollable ul{
+        width: 720px;
+        background-color: none;
+        scroll-behavior: smooth;
     }
     button {
         width: 90px;
@@ -728,6 +753,10 @@ letter-spacing: 0.2EM;
         position: fixed;
         left: 0PX;
         top: 80px;
+        visibility: hidden;
+    }
+    .sidebarb{
+        visibility: hidden;
     }
     .sidebar ul li{
         list-style-type: none;
@@ -763,7 +792,7 @@ letter-spacing: 0.2EM;
     }
     .nav-togglerb,
     .nav-togglerb span{
-        visibility: visible;
+        visibility: hidden;
     }
     .nav-toggler{
         right: 20px;
@@ -779,19 +808,19 @@ letter-spacing: 0.2EM;
 
 @media screen and (max-width: 480px) {
     *{
-        width: 480px;
+        width: 100%;
     }
     body{
-        width: 480px;
+        width: 100%;
     }
     .navbar{
-        width: 480px;
+        width: 100%;
         height: 55px;
     }
     .nav-toggler{
         display: block;
         position: fixed;
-        left: 410px;
+        right: 5px;
         top: -px;
         visibility: visible;
     }
@@ -843,11 +872,14 @@ letter-spacing: 0.2EM;
         background-color: none;
     }
     .header{
-        width: 680px;
+        width: 480px;
         padding-top: 20px;
-        height: 80px;
-        position: relative;
-        left: 170px;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        position: absolute;
+        left: 140px;
     }
     .header h1{
         text-align: center;
@@ -866,18 +898,18 @@ letter-spacing: 0.2EM;
     
     .scrollable{
         width: 680px;
-        height: 350px;
+        height: 250px;
         background-color: none;
         position: relative;
         right: 0px;
         background-color: none;
-        top: 70px;
+        top: 20px;
         left: 50px;
         display: flex;
     }
     .pic{
-        width: 180px;
-        height: 200px;
+        width: 150px;
+        height: 160px;
         border-radius: 20px;
         user-select: none;
     }
@@ -890,16 +922,16 @@ letter-spacing: 0.2EM;
     }
     .scrollable ul li{
         background-color: wheat;
-        width: 180px;
-        height: 300px;
+        width: 150px;
+        height: 250px;
         border-radius: 20px;
         padding-left: none;
         position: relative;
-        left: -30px;
+        left: -60px;
     }
     button {
         width: 90px;
-        height: 31px;
+        height: 28px;
         text-align: center;
         font-size: 12px;
         margin-top: 10px;
@@ -921,12 +953,12 @@ letter-spacing: 0.2EM;
     }
     .scrollable li:hover{
         background-color: wheat;
-        width: 200px;
-        height: 300px;
+        width: 160px;
+        height: 250px;
         border-radius: 20px;
         padding-left: none;
         position: relative;
-        left: -30px;
+        left: -70px;
     }
 
     .sidebar ul{
@@ -981,28 +1013,34 @@ letter-spacing: 0.2EM;
 
 @media screen and (max-width: 360px) {
     *{
-        width: 360px;
+        width: 100%;
     }
     body{
-        width: 360px;
+        width: 100%;
     }
     .navbar{
-        width: 360px;
+        width: 100%;
         height: 55px;
     }
     .nav-toggler{
         display: block;
-        position: relative;
-        left: 150px;
-        top: -40px;
+        position: fixed;
+        right: -50px;
+        top: px;
+        width: 25px;
+        height: 25px;
+        
         visibility: visible;
+    }
+    .nav-toggler:span{
+        width: 20px;
     }
     .nav-togglerb{
         display: block;
     }
     .navbar h1{
         position: relative;
-        left: -60px;
+        left: -90px;
         
     }
     .sidebar ul{
@@ -1084,7 +1122,9 @@ letter-spacing: 0.2EM;
     }
     .leftside{
         background-color: none;
-        width: 480px;
+        width: 100%;
+        left: -60px;
+        top: -25px;
     }
     /*stop control y*/
     .scrollable{
@@ -1097,6 +1137,7 @@ letter-spacing: 0.2EM;
         height: 80px;
         position: fixed;
         left: 0px;
+        visibility: hidden;
     }
     .header h1{
         text-align: center;
@@ -1129,7 +1170,7 @@ letter-spacing: 0.2EM;
     .pic{
         width: 120px;
         height: 100px;
-        border-radius: 20px;
+        border-radius: 0px;
         user-select: none;
     }
     .scrollable ul h2{
@@ -1144,7 +1185,7 @@ letter-spacing: 0.2EM;
         background-color: wheat;
         width: 120px;
         height: 180px;
-        border-radius: 20px;
+        border-radius: 0px;
         padding-left: none;
         position: relative;
         left: -30px;
@@ -1175,7 +1216,7 @@ letter-spacing: 0.2EM;
     }
     .scrollable li:hover{
         background-color: wheat;
-        width: 120px;
+        width: -220px;
         height: 180px;
         border-radius: 20px;
         padding-left: none;
@@ -1213,7 +1254,7 @@ letter-spacing: 0.2EM;
     .nav-toggler{
         display: block;
         position: relative;
-        left: 100px;
+        right: 5px;
         top: -37px;
         visibility: visible;
         width: 20px;
