@@ -24,6 +24,7 @@ body{
     margin-right: 80px;
     position: fixed;
     top: 20px;
+    width: fit-content;
     left: 780px;
     font-size: 10px;
     color: whitesmoke;
