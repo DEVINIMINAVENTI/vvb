@@ -37,7 +37,7 @@ body{
 }
 .WebView{
 width:100%;
-height: auto;
+height: 700px;
 }
 span{
     color: rgb(20, 211, 229);
