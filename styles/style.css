@@ -35,6 +35,10 @@ body{
    padding: 15px;
     
 }
+.WebView{
+width:100%;
+height: auto;
+}
 span{
     color: rgb(20, 211, 229);
 }
