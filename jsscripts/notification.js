@@ -4,7 +4,7 @@ function showNotification(){
         icon: "https://www.handouts.store/images/header.jpeg"
     });
     notification.onclick = (e) => {
-        window.location.href = "https://www.handouts.store/handouts/100lvlmcb/";
+        window.location.href = "https://www.handouts.store/handouts/100lvlsls/100LVLMCB/";
     };
 }
 
