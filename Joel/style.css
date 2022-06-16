@@ -1,0 +1,701 @@
+*{
+    margin: auto;
+}
+nav{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    background-image: linear-gradient(160deg, blue 30%, rgb(12, 12, 196) 55%);
+}
+.logo{
+    width: 250px;
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+nav ul li a{
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+.navlist{
+    display: none;
+}
+
+
+
+.firstdiv{
+    width: 100%;
+    height: 250px;
+}
+.backpic{
+    width: 100%;
+    height: 250px;
+}
+.firstdiv ul{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -200px;
+}
+.firstdiv ul h1{
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+.firstdiv ul p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 0.2em;
+}
+
+
+
+
+
+
+.seconddiv{
+    width: 100%;
+    height: fit-content;
+    background-color: #bab7e7;
+    
+}
+.seconddiv h1{
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-bottom: 2px solid blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seconddiv h2{
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    border-bottom: 2px solid blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seconddiv h3{
+    color: peru;
+    font-size: 20px;
+    padding: 5px;
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seconddiv h4{
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-bottom: 2px solid blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seconddiv p{
+    color: peru;
+    font-size: 18px;
+    padding: 5px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.seconddiv li{
+    color: purple;
+    font-size: 20px;
+    padding: 5px;
+ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span{
+    color: red;
+    letter-spacing: 0.2em;
+}
+buttonx {
+    width: 350px;
+    height: 31px;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+    font-weight: bold !important;
+    background: linear-gradient(#800080);
+    background-color: #0f357c;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #800080;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+
+    user-select: none;
+    right: 500px;
+    padding-top: 12px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.nav-toggler{
+    height: 34px;
+    width: 44px;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  
+    border: none;
+    display: none;
+}
+.nav-toggler:focus{
+    outline: none;
+    box-shadow: 0 0 15px rgba(red, green, blue, alpha);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.nav-toggler span::before{
+    transform: translateY(-6px);
+}
+.nav-toggler span::after{
+    transform: translateY(6px);   
+}
+
+.testimonies{
+    position: fixed;
+   height: auto;
+   width: 1350px;
+   top: 90px;
+   background-color: #0f357c;
+   overflow-x: auto;
+  
+}
+.showtestimonies{
+    visibility: hidden;
+}
+.testimonies-pics{
+    max-width: 300px;
+    padding-left: 5px;
+    padding-top: 30px;
+    max-height: 400px;
+}
+.testimonies ul{
+    display: flex;
+    list-style-type: none;
+    user-select: none;
+}
+.testimonies h1{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    position: fixed;
+Padding: 5px;
+    left: 250px;
+    right: 250px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    *{
+        margin: auto;
+    }
+    body{
+        width: 1024px;
+    
+    }
+    nav{
+        width: 1024px;
+    }
+    .navlist li a{
+        padding: 5px;
+        color: white;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 0.08em;
+    }
+    .logopicaa{
+        width: 200px;
+        height: 80px;
+    }
+    .firstdiv{
+        width: 1024px;
+    }
+    .backpic{
+        width: 1024px;
+    }
+    .footer{
+        width: 1024px;
+    }
+    .seconddiv{
+        width: 950px;
+        height: 1650px;
+        position: relative;
+        top: -110px;
+        background-color: #bab7e7;
+    }
+
+    /*FIRST 2 DIV ITEMS*/
+    .first-sub-div{
+        width: 290px;
+    }
+    .first-sub-div ul li{
+        font-size: 17px;
+    }
+
+    /*THIRD DIV ITEMS*/
+    .third-sub-div-a{
+        width: 290px;
+    }
+    .third-sub-div-a ul li{
+        font-size: 17px;
+    }
+
+
+    /*SECOND DIV ITEMS*/
+    .second-sub-div-a{
+        width: 290px;
+    }
+    .second-sub-div-a ul li{
+        font-size: 17px;
+    }
+    buttonx{
+        width: 290PX;
+    }
+
+
+
+}
+
+@media screen and (max-width: 720px) {
+    *{
+        margin: auto;
+    }
+    body{
+        width: 100%;
+    
+    }
+    nav{
+        width: auto;
+    }
+    nav ul li a{
+        padding: 2px;
+        color: white;
+        width: fit-content;
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 0.08em;
+    }
+    .logopicaa{
+        width: 200px;
+        height: 80px;
+    }
+    .firstdiv{
+        width: 720px;
+    }
+    .backpic{
+        width: 720px;
+    }
+    .footer{
+        width: 1024px;
+    }
+    .seconddiv{
+        width: 720px;
+        height: 1700px;
+        position: relative;
+        top: -110px;
+        background-color: #bab7e7;
+    }
+
+    /*FIRST 2 DIV ITEMS*/
+    .first-sub-div{
+        width: 290px;
+    }
+    .first-sub-div ul li{
+        font-size: 17px;
+    }
+
+    /*THIRD DIV ITEMS*/
+    .third-sub-div-a{
+        width: 290px;
+    }
+    .third-sub-div-a ul li{
+        font-size: 17px;
+    }
+
+
+    /*SECOND DIV ITEMS*/
+    .second-sub-div-a{
+        width: 290px;
+    }
+    .second-sub-div-a ul li{
+        font-size: 17px;
+    }
+    buttonx{
+        width: 290PX;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    *{
+        margin: auto;
+    }
+    body{
+        width: 100%;
+    }
+    nav{
+        width:  100%;
+
+    }
+    .logopicaa{
+        width: 300px;
+    }
+    .nav-toggler{
+        display: block;
+        width: 50px;
+        height: 40px;
+    }
+    .nav-toggler span{
+        width: 40px;
+        height: 3px;
+    }
+    .nav-toggler span::before{
+        transform: translateY(-10px);
+    }
+    .nav-toggler span::after{
+        transform: translateY(10px);   
+    }
+    
+    .navlist{
+        display: block;
+        width: 300px;
+        background-color: #800080;
+        position: fixed;
+        right: 0px;
+        top: 80px;
+       list-style: none;
+        height: 280px;
+     
+        text-align: left;
+    
+    }
+    .hidenav{
+        display: none;
+    }
+
+
+    .navlist li a{
+        font-size: 25px;
+        padding-top: 25px;
+        height: 20px;
+        line-height: 65px;
+        color: white;
+        text-align: right;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .firstdiv{
+        width: 480px;
+
+    }
+    .firstdiv ul{
+        display: block;
+        text-align: center;
+        position: relative;
+        top: -200px;
+        width: 480px;
+    }
+    .firstdiv ul h1{
+        font-family: cursive;
+        color: white;
+        font-size: 25px;
+        letter-spacing: 0.2em;
+    }
+    .firstdiv ul p{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        letter-spacing: 0.2em;
+    }
+
+    .backpic{
+        width: 480px;
+    }
+
+
+    .seconddiv{
+        width: 460px;
+        height: 1980px;
+        position: relative;
+        top: -110px;
+        background-color: #bab7e7;
+    }
+
+    /*FIRST 2 DIV ITEMS*/
+    .first-sub-div{
+        width: 215px;
+    }
+    .first-sub-div ul li{
+        font-size: 14px;
+    }
+
+    /*THIRD DIV ITEMS*/
+    .third-sub-div-a{
+        width: 215px;
+    }
+    .third-sub-div-a ul li{
+        font-size: 14px;
+    }
+
+
+    /*SECOND DIV ITEMS*/
+    .second-sub-div-a{
+        width: 215px;
+    }
+    .second-sub-div-a ul li{
+        font-size: 14px;
+    }
+    buttonx{
+        width: 220PX;
+    }
+    .footer{
+        width: 720px;
+    }
+    .footer h1{
+        font-size: 20px;
+    }
+    .hidesmall{
+        display: none;
+    }
+    .testimonies{
+        position: fixed;
+       height: 500px;
+       width: 480px;
+       top: 90px;
+       background-color: #0f357c;
+       overflow-x: auto;
+      
+    }
+    .testimonies ul{
+        display: block;
+    }
+    .testimonies h1{
+        font-size: 18px;
+        color: white;
+   
+        position: fixed;
+        right: 0px;
+        width: 100px;
+        text-align: right ;
+        background-color: #800080;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 360px) {
+    *{
+        margin: auto;
+    }
+    body{
+        width: 100%;
+    }
+    nav{
+        width:  100%;
+
+    }
+    .logopicaa{
+        width: 300px;
+    }
+    .nav-toggler{
+        display: block;
+        width: 50px;
+        height: 40px;
+    }
+    .nav-toggler span{
+        width: 40px;
+        height: 3px;
+    }
+    .nav-toggler span::before{
+        transform: translateY(-10px);
+    }
+    .nav-toggler span::after{
+        transform: translateY(10px);   
+    }
+    
+    .navlist{
+        display: block;
+        width: 300px;
+        background-color: #800080;
+        position: fixed;
+        right: 0px;
+        top: 80px;
+       list-style: none;
+        height: 280px;
+     
+        text-align: left;
+    
+    }
+    .hidenav{
+        display: none;
+    }
+
+
+    .navlist li a{
+        font-size: 18px;
+        padding-top: 25px;
+        height: 20px;
+        line-height: 65px;
+        color: white;
+        text-align: right;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .firstdiv{
+        width: 360px;
+
+    }
+    .firstdiv ul{
+        display: block;
+        text-align: center;
+        position: relative;
+        top: -200px;
+        width: 320px;
+    }
+    .firstdiv ul h1{
+        font-family: cursive;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+    }
+    .firstdiv ul p{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 0.2em;
+    }
+
+    .backpic{
+        width: 360px;
+    }
+
+
+    .seconddiv{
+        width: 340px;
+        height: 2280px;
+        position: relative;
+        top: -110px;
+        background-color: #bab7e7;
+    }
+
+    /*FIRST 2 DIV ITEMS*/
+    .first-sub-div{
+        width: 215px;
+    }
+    .first-sub-div ul li{
+        font-size: 14px;
+    }
+
+    /*THIRD DIV ITEMS*/
+    .third-sub-div-a{
+        width: 215px;
+    }
+    .third-sub-div-a ul li{
+        font-size: 14px;
+    }
+
+
+    /*SECOND DIV ITEMS*/
+    .second-sub-div-a{
+        width: 215px;
+    }
+    .second-sub-div-a ul li{
+        font-size: 14px;
+    }
+    buttonx{
+        width: 220PX;
+    }
+    .footer{
+        width: 720px;
+    }
+    .footer h1{
+        font-size: 20px;
+    }
+    .hidesmall{
+        display: none;
+    }
+    .testimonies{
+        position: fixed;
+       height: 500px;
+       width: 480px;
+       top: 90px;
+       background-color: #0f357c;
+       overflow-x: auto;
+      
+    }
+    .testimonies ul{
+        display: block;
+    }
+    .testimonies h1{
+        font-size: 18px;
+        color: white;
+   
+        position: fixed;
+        right: 0px;
+        width: 100px;
+        text-align: right ;
+        background-color: #800080;
+    }
+
+
+}
+
+
+
+
