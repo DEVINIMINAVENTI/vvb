@@ -56,38 +56,7 @@ a.active, a:hover{
 
 }
 
-.sidebar ul{
-    width: 200px;
-    height: 530px;
-    background-color: wheat;
-    position: fixed;
-    left: 0PX;
-    top: 80px;
-    visibility: hidden;
-}
-.sidebar ul li{
-    list-style-type: none;
-    list-style: none;
-}
-.sidebar a{
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blue;
-    text-decoration: none;
-    display: block;
-  line-height: 32.5px;
-  text-align: left;
-  justify-content: center;
-}
-.sidebar a:hover{
-    border: 2px solid brown;
-    background-color: white;
-    position: relative;
-    
-    font-size: 15px;
-    width: fit-content;
-    
-}
+
 .leftside{
      
     height: fit-content;
@@ -98,7 +67,7 @@ a.active, a:hover{
     top: 50px;
 }
 .header{
-    width: 100%;
+    width: 800px;
     padding-top: 20px;
     height: 80px;
     display: flex;
@@ -123,7 +92,7 @@ a.active, a:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .header p{
-    text-align: center;
+    text-align: left;
     justify-content: center;
     font-size: 20px;
     color: #2d2d2d;
@@ -131,25 +100,30 @@ a.active, a:hover{
     user-select: none;
 }
 .scrollable{
-    width: 100%;
+
     height: 320px;
     background-color: none;
     position: relative;
     right: 0px;
+    left: 0px;
     top: 70px;
+    overflow-x: auto;
     display: flex;
 }
 .scrollable ul{
     display: flex;
     list-style-type: none;
     text-align: center;
-    justify-content: center;
-    top: -50px;
+ 
+    width: fit-content;
     position: relative;
 }
 .scrollable ul li h2:hover{
     font-size: 17px;
     color: blue;
+}
+.scrollable ul li:hover{
+    border: 2px solid blue;
 }
 span:hover{
     color: #2d2d2d;
@@ -179,19 +153,8 @@ span:hover{
     height: 300px;
     border-radius: 20px;
 }
-.scrollable li:hover{
-    width: 230px;
-    height: 290px;
-    background-color: whitesmoke;
-    text-decoration: none;
-    border-radius: 15px;
-    border: 5px solid blue;
-}
-.scrollable li a:hover{
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
+
 button {
     width: 180px;
     height: 31px;
@@ -303,6 +266,7 @@ buttonx {
 }
 .footer h1{
     font-size: 22px;
+    color: rgb(20, 211, 229);
 }
 .morebtn{
     width: fit-content;
@@ -317,7 +281,7 @@ buttonx {
     right: 0px;
     left: 0px;
     height: 500px;
-    background-color: rgb(94, 79, 43);
+    background-color:  rgb(49, 60, 70);
     position: fixed;
     top: 100px;
     
@@ -331,21 +295,24 @@ buttonx {
     display: flex;
     list-style-type: none;
     padding-top: 6px;
+    text-align: left;
     height: 50px;
-    background-color: rgb(94, 79, 43);
+    background-color: rgb(49, 60, 70);
    
 }
 .shops ul li a{
     text-decoration: none;
     font-size: 20px;
-    background-color: rgb(94, 79, 43);
-    border: 3px solid white;
+    background-color: rgb(49, 60, 70);
+    border: 1px solid white;
+    text-align: left;
     padding: 10px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 .shops ul li a:hover{
     color: red;
-    border: 5px solid greenyellow;
+    border: 2.5px solid greenyellow;
+    transition: .5;
 }
 
 
@@ -384,15 +351,15 @@ buttonx {
         height: 55px;
     }
     .navbar ul{
-        width: 280px;
+        width: 220px;
         background-color: #800080;
         display: block;
         line-height: 50px;
         position: fixed;
         right: -180px;
         top: 50px;
-        justify-content: center;
-        justify-items: center;
+        text-align: left;
+      
         
     }
     .nav-toggler{
@@ -439,11 +406,11 @@ buttonx {
         background-color: none;
     }
     .header{
-        width: 100%;
+        width: 800px;
         padding-top: 20px;
         height: 80px;
         position: relative;
-        
+        left: 80px;
     }
     .header h1{
         text-align: left;
@@ -515,15 +482,7 @@ buttonx {
         user-select: none;
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
     }
-    .scrollable li:hover{
-        background-color: wheat;
-        width: 200px;
-        height: 300px;
-        border-radius: 20px;
-        padding-left: none;
-        position: relative;
-        left: -30px;
-    }
+   
     .sidebar ul{
         width: 300px;
         height: 555px;
@@ -622,6 +581,7 @@ letter-spacing: 0.2EM;
     }
     .header{
         width: 600px;
+        left: -0px;
     }
     .header p{
         width: 100%;
@@ -789,16 +749,7 @@ letter-spacing: 0.2EM;
         position: relative;
         
     }
-    .scrollable ul li:hover{
-        background-color: wheat;
-        width: 180px;
-        height: 250px;
-        border-radius: 20px;
-        padding-left: none;
-        position: relative;
-        left: 5px;
-        
-    }
+ 
     .scrollable ul{
         width: 720px;
         background-color: none;
@@ -826,15 +777,7 @@ letter-spacing: 0.2EM;
         user-select: none;
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
     }
-    .scrollable li:hover{
-        background-color: wheat;
-        width: 200px;
-        height: 300px;
-        border-radius: 20px;
-        padding-left: none;
-        position: relative;
-        left: -30px;
-    }
+  
     .sidebar ul{
         width: 250px;
         height: 555px;
@@ -999,14 +942,14 @@ letter-spacing: 0.2EM;
         background-color: none;
     }
     .header{
-        width: 350;
+        width: 350px;
         padding-top: 20px;
         height: auto;
         text-align: left;
         justify-content: center;
         justify-items: center;
         position: absolute;
-        left: -2px;
+        left: 80px;
     }
     .header h1{
         text-align: left;
@@ -1016,12 +959,13 @@ letter-spacing: 0.2EM;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .headerpic{
-        width: 150px;
+        width: 110px;
+        height: 70px;
     }
     .header p{
         text-align: left;
         justify-content: center;
-        font-size: 15px;
+        font-size: 14px;
         color: #2d2d2d;
         font-family: serif;
     }
@@ -1036,6 +980,15 @@ letter-spacing: 0.2EM;
         top: 80px;
         left: 50px;
         display: flex;
+    }
+    .scrollable{
+        position: relative;
+        left: 0px;
+        right: 0px;
+    }
+    .scrollable ul{
+        position: relative;
+        left: 30px;
     }
     .pic{
         width: 150px;
@@ -1081,15 +1034,7 @@ letter-spacing: 0.2EM;
         user-select: none;
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
     }
-    .scrollable li:hover{
-        background-color: wheat;
-        width: 160px;
-        height: 250px;
-        border-radius: 20px;
-        padding-left: none;
-        position: relative;
-        left: -70px;
-    }
+   
 
     .sidebar ul{
         width: 350px;
@@ -1179,7 +1124,24 @@ letter-spacing: 0.2EM;
 
 
 
-
+@media screen and (max-width: 412px) {
+    .header{
+        left: -10px;
+        width: 400px;
+    }
+    .leftside{
+        height: 500px;
+    }
+    .scrollable{
+        position: relative;
+        left: 0px;
+        right: 0px;
+    }
+    .scrollable ul{
+        position: relative;
+        left: 30px;
+    }
+}
 
 
 @media screen and (max-width: 360px) {
@@ -1310,15 +1272,17 @@ letter-spacing: 0.2EM;
         background-color: none;
     }
     .header{
-        width: 100%;
+        width: 320px;
         padding-top: 180px;
         height: 80px;
         position: absolute;
-        left: 50px;
+        left: 70px;
         visibility: visible;
     }
     .headerpic{
         visibility: visible;
+        width: 110px;
+        height: 60px;
     }
     .header h1{
         text-align: left;
@@ -1395,16 +1359,7 @@ letter-spacing: 0.2EM;
         user-select: none;
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
     }
-    .scrollable li:hover{
-        background-color: wheat;
-        width: -220px;
-        height: 180px;
-        border-radius: 20px;
-        padding-left: none;
-        position: relative;
-        left: -30px;
-        user-select: none;
-    }
+
     .sidebar{
         width: auto;
     }
@@ -1629,15 +1584,7 @@ letter-spacing: 0.2EM;
         top: -10px;
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
     }
-    .scrollable li:hover{
-        background-color: wheat;
-        width: 150px;
-        height: 220px;
-        border-radius: 20px;
-        padding-left: none;
-        position: relative;
-        left: -30px;
-    }
+   
     .scrollable a{
         text-decoration: none;
     }
